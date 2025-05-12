@@ -12,8 +12,8 @@ import numpy as np
 import joblib
 
 # Load model dan scaler
-model = joblib.load('randomforest__model.joblib')
-scaler = joblib.load('scaler_edutech.joblib')
+model = joblib.load('randomforest_model.joblib')
+scaler = joblib.load('scaler_jjinstitut.joblib')
 
 # Judul dan subjudul
 st.title("🎓 Prediksi Resiko Dropout Siswa")
