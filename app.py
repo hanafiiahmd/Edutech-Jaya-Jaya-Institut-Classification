@@ -12,7 +12,7 @@ import numpy as np
 import joblib
 
 # Load model dan scaler
-model = joblib.load('randomforest_model.joblib')
+model = joblib.load('randomforest__model.joblib')
 scaler = joblib.load('scaler_edutech.joblib')
 
 # Judul dan subjudul
