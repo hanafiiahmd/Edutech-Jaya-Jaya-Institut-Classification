@@ -10,6 +10,7 @@ Original file is located at
 import streamlit as st
 import numpy as np
 import joblib
+import pandas as pd
 
 # Load model dan scaler
 model = joblib.load('randomforest_model.joblib')
@@ -40,12 +41,18 @@ with col2:
     cu2_approved = st.number_input("Jumlah Mata Kuliah Semester 2 Disetujui", min_value=0, step=1)
     cu2_grade = st.number_input("Nilai Rata-rata Semester 2", min_value=0.0, step=0.1)
 
-# Buat array input
-input_data = np.array([[prev_qualification, admission_grade, tuition_fees, age,
-                        cu1_enrolled, cu1_approved, cu1_grade,
-                        cu2_enrolled, cu2_evaluated, cu2_approved, cu2_grade]])
+feature_names = ['Previous_Qualification_Grade', 'Admission_Grade', 'Tuition_Paid', 'Age_at_Enrolment',
+                 'Curricular_Units_1st_Sem_Enrolled', 'Curricular_Units_1st_Sem_Approved', 'Curricular_Units_1st_Sem_Grade',
+                 'Curricular_Units_2nd_Sem_Enrolled', 'Curricular_Units_2nd_Sem_Evaluations', 
+                 'Curricular_Units_2nd_Sem_Approved', 'Curricular_Units_2nd_Sem_Grade']
 
-input_scaled = scaler.transform(input_data)
+input_values = [[prev_qualification, admission_grade, tuition_fees, age,
+                 cu1_enrolled, cu1_approved, cu1_grade,
+                 cu2_enrolled, cu2_evaluated, cu2_approved, cu2_grade]]
+
+input_df = pd.DataFrame(input_values, columns=feature_names)
+
+input_scaled = scaler.transform(input_df)
 
 # Tombol untuk memulai prediksi
 if st.button("🔍 Prediksi"):
