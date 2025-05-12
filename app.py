@@ -41,10 +41,10 @@ with col2:
     cu2_approved = st.number_input("Jumlah Mata Kuliah Semester 2 Disetujui", min_value=0, step=1)
     cu2_grade = st.number_input("Nilai Rata-rata Semester 2", min_value=0.0, step=0.1)
 
-feature_names = ['Previous_Qualification_Grade', 'Admission_Grade', 'Tuition_Paid', 'Age_at_Enrolment',
-                 'Curricular_Units_1st_Sem_Enrolled', 'Curricular_Units_1st_Sem_Approved', 'Curricular_Units_1st_Sem_Grade',
-                 'Curricular_Units_2nd_Sem_Enrolled', 'Curricular_Units_2nd_Sem_Evaluations', 
-                 'Curricular_Units_2nd_Sem_Approved', 'Curricular_Units_2nd_Sem_Grade']
+feature_names = ['Previous_qualification_grade', 'Admission_grade', 'Tuition_fees_up_to_date', 'Age_at_enrollment',
+                 'Curricular_units_1st_sem_enrolled', 'Curricular_units_1st_sem_approved', 'Curricular_units_1st_sem_grade',
+                 'Curricular_units_2nd_sem_enrolled', 'Curricular_units_2nd_sem_evaluations', 
+                 'Curricular_units_2nd_sem_approved', 'Curricular_units_2nd_sem_grade']
 
 input_values = [[prev_qualification, admission_grade, tuition_fees, age,
                  cu1_enrolled, cu1_approved, cu1_grade,
