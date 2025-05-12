@@ -27,7 +27,7 @@ col1, col2 = st.columns(2)
 with col1:
     prev_qualification = st.slider("Nilai Kualifikasi Sebelumnya", min_value=0.0, max_value=100.0, step=0.1)
     admission_grade = st.slider("Nilai Penerimaan", min_value=0.0, max_value=100.0, step=0.1)
-    age = st.slider("Usia Saat Masuk", min_value=15, max_value=40, step=1)
+    age = st.slider("Usia Saat Masuk", min_value=15, max_value=100, step=1)
     cu1_enrolled = st.number_input("Jumlah Mata Kuliah Semester 1 Diambil", min_value=0, step=1)
     cu1_approved = st.number_input("Jumlah Mata Kuliah Semester 1 Disetujui", min_value=0, step=1)
     cu1_grade = st.number_input("Nilai Rata-rata Semester 1", min_value=0.0, step=0.1)
