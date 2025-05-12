@@ -11,7 +11,19 @@ Jumlah dropout yang tinggi ini tentunya menjadi salah satu masalah yang besar un
 3. Membuat model machine learning yang dapat digunakan untuk mendeteksi lebih awal mengenai siswa yang kemungkinan akan dropout
 
 ### Cakupan Proyek
-Tuliskan cakupan proyek yang akan dikerjakan.
+1. Business Understanding
+   Memahami latar belakang bisnis, serta masalah yang dihadapi yang akan kita selesaikan melalui proyek ini
+2. Data Understanding
+   Memahami gambaran besar dari data yang akan diolah, seperti mengecek apakah ada missing value dalam data, apakah ada duplikasi data, korelasi antar fitur, EDA, dsb.
+3. Data Preparation
+   Melakukan pemrosesan data seperti mengatasi missing value dalam data jika ada, duplikat dalam data jika ada, melakukan drop untuk menghapus fitur-fitur yang dianggap tidak relevan untuk tahap modelling, splitting data dan scalling data, hingga data sudah bersih dan siap untuk di proses di tahap modelling.
+4. Modelling
+   Membuat model machine learning yang tepat untuk mengatasi masalah klasifikasi kasus ini, disini saya menggunakan model random forest, yang mana model akan berguna untuk mengantisipasi, memprediksi lebih awal, serta mencegah siswa yang akan drop out di Jaya Jaya Institut.
+5. Evaluation
+   Melakukan evaluasi model, untuk melihat seberapa baik model yang sudah kita bangun sebelumnya.
+6. Deployment
+   Membuat sistem prototype atau UI/UX sederhana untuk menjalankan model machine learning yang telah di buat melalui streamlit app. 
+
 
 ### Persiapan
 
@@ -19,6 +31,7 @@ Sumber data: https://github.com/dicodingacademy/dicoding_dataset/blob/main/stude
 
 Setup environment:
 ```
+Setup environment Anaconda:
 
 ```
 
@@ -26,10 +39,15 @@ Setup environment:
 Jelaskan tentang business dashboard yang telah dibuat. Jika ada, sertakan juga link untuk mengakses dashboard tersebut.
 
 ## Menjalankan Sistem Machine Learning
-Jelaskan cara menjalankan protoype sistem machine learning yang telah dibuat. Selain itu, sertakan juga link untuk mengakses prototype tersebut.
 
+Langkah-langkah menjalankan sistem:
+1. Akses streamlit app, lalu isi data sesuai data mahasiswa, seperti yang ada di tampilan app, seperti usia saat enrollment, jumlah kurikulum semester 1 diambil, dst...
+2. Klik tombol prediksi
+3. Hasil prediksi akan menampilkan: Siswa beresiko tinggi akan dropout / Siswa berpotensi akan graduate
+
+Link streamlit app dapat diakses melalui link dibawah ini:
 ```
-
+https://edutech-jaya-jaya-institut-classification-zyag2zmwr7nlxnbehkj5.streamlit.app/
 ```
 
 ## Conclusion
