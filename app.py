@@ -25,8 +25,8 @@ st.markdown("Masukkan data siswa berdasarkan hasil akademik dan status administr
 # Input user dengan elemen UI interaktif
 col1, col2 = st.columns(2)
 with col1:
-   prev_qualification = st.number_input("Nilai Kualifikasi Sebelumnya", min_value=0, step=0.1)
-    admission_grade = st.number_input("Nilai Penerimaan", min_value=0, step=0.1)
+    prev_qualification = st.number_input("Nilai Kualifikasi Sebelumnya", min_value=0.0, step=0.1)
+    admission_grade = st.number_input("Nilai Penerimaan", min_value=0.0, step=0.1)
     age = st.slider("Usia Saat Masuk", min_value=15, max_value=70, step=1)
     cu1_enrolled = st.number_input("Jumlah Mata Kuliah Semester 1 Diambil", min_value=0, step=1)
     cu1_approved = st.number_input("Jumlah Mata Kuliah Semester 1 Disetujui", min_value=0, step=1)
