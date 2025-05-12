@@ -15,8 +15,6 @@ import joblib
 model = joblib.load('random_forest_edutechjj_model.joblib')
 scaler = joblib.load('scaler.joblib')
 
-input_scaled = scaler.transform(input_data)
-
 # Judul dan subjudul
 st.title("🎓 Prediksi Resiko Dropout Siswa")
 st.subheader("Jaya Jaya Institut")
@@ -46,6 +44,8 @@ with col2:
 input_data = np.array([[prev_qualification, admission_grade, tuition_fees, age,
                         cu1_enrolled, cu1_approved, cu1_grade,
                         cu2_enrolled, cu2_evaluated, cu2_approved, cu2_grade]])
+
+input_scaled = scaler.transform(input_data)
 
 # Tombol untuk memulai prediksi
 if st.button("🔍 Prediksi"):
