@@ -32,8 +32,21 @@ Sumber data: https://github.com/dicodingacademy/dicoding_dataset/blob/main/stude
 Setup environment:
 ```
 Setup environment Anaconda:
+conda create --name dropout-prediction python=3.11.12
+conda activate dropout-prediction
+pip install -r requirements.txt
 
+Setup environment Shell/Terminal:
+mkdir dropout-prediction
+cd dropout-prediction
+pipenv install
+pipenv shell
+pip install -r requirements.txt
 ```
+Proyek ini diselesaikan dengan menggunakan model random forest, berkas-berkas yang diperlukan antara lain:
+- Model random forest: randomforest_model.joblib
+- Scaler: scaler_jjinstitut.joblib
+- file app.py
 
 ## Business Dashboard
 Jelaskan tentang business dashboard yang telah dibuat. Jika ada, sertakan juga link untuk mengakses dashboard tersebut.
