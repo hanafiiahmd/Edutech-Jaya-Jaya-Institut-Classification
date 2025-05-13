@@ -49,7 +49,9 @@ Proyek ini diselesaikan dengan menggunakan model random forest, berkas-berkas ya
 - file app.py
 
 ## Business Dashboard
-Jelaskan tentang business dashboard yang telah dibuat. Jika ada, sertakan juga link untuk mengakses dashboard tersebut.
+Business Dashboard ini dibuat dengan tujuan memonitoring data siswa Jaya Jaya Insitut yang kemungkinan akan dropout, ada beberapa fitur yang ada dalam business dashboard yang telah dibuat yang mempengaruhi tingkat dropout siswa di Jaya Jaya Institut. Dashboard dibuat dengan bantuan tools looker studio.
+
+Dashboard dapat diakses melalui: https://lookerstudio.google.com/reporting/fd718ad9-d855-41c9-913d-fa033c03696b
 
 ## Menjalankan Sistem Machine Learning
 
@@ -64,9 +66,13 @@ https://edutech-jaya-jaya-institut-classification-zyag2zmwr7nlxnbehkj5.streamlit
 ```
 
 ## Conclusion
-Jelaskan konklusi dari proyek yang dikerjakan.
+Kesimpulan dari proyek ini antara lain sebagai berikut:
+1. Dari total 3630 siswa Jaya Jaya Institut, ada sebanyak 2209 siswa yang graduate dan 1421 siswa yang dropout, tingkat dropout rate mencapai 39,15%.
+2. Dalam proyek ini, dibuat business dashboard untuk membantu monitoring siswa yang beresiko akan dropout di Jaya Jaya Institut.
+3. Untuk membantu tim Jaya Jaya Institut dalam memprediksi lebih awal kemungkinan siswa yang akan dropout, saya membuat model machine learning menggunakan model random forest dengan menggunakan 11 fitur yang mempengaruhi tingkat dropout/graduate siswa, dengan akurasi sebesar 89.80%.
+4. Terdapat UI/UX sederhana untuk menjalankan model machine learning yang telah dibuat untuk memprediksi siswa yang berpotensi akan dropout, sehingga dapat dilakukan antisipasi lebih awal.
 
 ### Rekomendasi Action Items
 Berikan beberapa rekomendasi action items yang harus dilakukan perusahaan guna menyelesaikan permasalahan atau mencapai target mereka.
-- action item 1
-- action item 2
+- Memberikan bimbingan khusus untuk siswa yang mendapat nilai rata-rata yang rendah di semester 1, agar dapat memperbaiki nilai mereka serta memberikan kesempatan untuk memperbaiki nilai rata-rata kurikulum semester 2 untuk siswa yang mendapat nilai jelek, khususnya nilai 0.
+- Memberikan persetujuan untuk mata kuliah yang diambil oleh siswa, sehingga siswa dapat menyelesaikan studi tepat waktu dan tidak terancam menambah semester yang mengakibatkan siswa terancam dropout. 
